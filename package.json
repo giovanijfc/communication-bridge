@@ -1,6 +1,6 @@
 {
   "name": "@giovani.queimadiaria/communication-bridge",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Test communication bridge in ios and android",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
