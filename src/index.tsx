@@ -1,9 +1,3 @@
-import { NativeModules } from 'react-native';
+import { GeneratorRandomNumber } from './components/GeneratorRandomNumber';
 
-type CommunicationBridgeType = {
-  multiply(a: number, b: number): Promise<number>;
-};
-
-const { CommunicationBridge } = NativeModules;
-
-export default CommunicationBridge as CommunicationBridgeType;
+export { GeneratorRandomNumber };
