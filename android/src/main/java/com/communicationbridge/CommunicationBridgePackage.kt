@@ -1,6 +1,6 @@
 package com.communicationbridge
 
-import com.communicationbridge.ui.manager.GeneratorRandomNumberManager
+import com.communicationbridge.ui.manager.GeneratorRandomNumberViewManager
 import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
@@ -13,6 +13,6 @@ class CommunicationBridgePackage : ReactPackage {
   }
 
   override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {
-    return mutableListOf(GeneratorRandomNumberManager())
+    return mutableListOf(GeneratorRandomNumberViewManager())
   }
 }

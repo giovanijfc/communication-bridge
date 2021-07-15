@@ -7,3 +7,7 @@ RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
                  withRejecter:(RCTPromiseRejectBlock)reject)
 
 @end
+
+@interface RCT_EXTERN_MODULE(GeneratorRandomNumberViewManager, RCTViewManager)
+
+@end

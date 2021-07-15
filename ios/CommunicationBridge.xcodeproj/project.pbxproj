@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* CommunicationBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* CommunicationBridge.m */; };
-		F4FF95D7245B92E800C19C63 /*  CommunicationBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  CommunicationBridge.swift */; };
-
+		B9D5413F26A0E34F00DA674B /* GeneratorRandomNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5413E26A0E34F00DA674B /* GeneratorRandomNumberView.swift */; };
+		B9D5414626A0E5BE00DA674B /* GeneratorRandomNumberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5414526A0E5BE00DA674B /* GeneratorRandomNumberManager.swift */; };
+		F4FF95D7245B92E800C19C63 /* CommunicationBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* CommunicationBridge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +26,11 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libCommunicationBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommunicationBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
 		B3E7B5891CC2AC0600A0062D /* CommunicationBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationBridge.m; sourceTree = "<group>"; };
-		F4FF95D5245B92E700C19C63 /* CommunicationBridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommunicationBridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		B9D5413E26A0E34F00DA674B /* GeneratorRandomNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorRandomNumberView.swift; sourceTree = "<group>"; };
+		B9D5414526A0E5BE00DA674B /* GeneratorRandomNumberManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorRandomNumberManager.swift; sourceTree = "<group>"; };
+		F4FF95D5245B92E700C19C63 /* GeneratorRandomNumberViewMangager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeneratorRandomNumberViewMangager-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4FF95D6245B92E800C19C63 /* CommunicationBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationBridge.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +55,37 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
+				B9D5414326A0E58D00DA674B /* Ui */,
 				F4FF95D6245B92E800C19C63 /* CommunicationBridge.swift */,
 				B3E7B5891CC2AC0600A0062D /* CommunicationBridge.m */,
-				F4FF95D5245B92E700C19C63 /* CommunicationBridge-Bridging-Header.h */,
-
+				F4FF95D5245B92E700C19C63 /* GeneratorRandomNumberViewMangager-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		B9D5414226A0E58400DA674B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9D5413E26A0E34F00DA674B /* GeneratorRandomNumberView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9D5414326A0E58D00DA674B /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				B9D5414426A0E59E00DA674B /* Manager */,
+				B9D5414226A0E58400DA674B /* View */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		B9D5414426A0E59E00DA674B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B9D5414526A0E5BE00DA674B /* GeneratorRandomNumberManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,10 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
+				B9D5413F26A0E34F00DA674B /* GeneratorRandomNumberView.swift in Sources */,
+				B9D5414626A0E5BE00DA674B /* GeneratorRandomNumberManager.swift in Sources */,
 				F4FF95D7245B92E800C19C63 /* CommunicationBridge.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* CommunicationBridge.m in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,11 +260,9 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CommunicationBridge;
 				SKIP_INSTALL = YES;
-
 				SWIFT_OBJC_BRIDGING_HEADER = "CommunicationBridge-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Debug;
 		};
@@ -259,10 +279,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CommunicationBridge;
 				SKIP_INSTALL = YES;
-
 				SWIFT_OBJC_BRIDGING_HEADER = "CommunicationBridge-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Release;
 		};
